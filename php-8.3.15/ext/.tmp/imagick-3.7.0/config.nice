@@ -1,0 +1,10 @@
+#! /bin/sh
+#
+# Created by configure
+
+CFLAGS='-g -O2 -fPIC' \
+CC='/usr/bin/gcc' \
+CXX='/usr/bin/gcc' \
+'./configure' \
+'--with-php-config=/home/work/php8-master/php-8.3.15/.tmp/install/php/bin/php-config' \
+"$@"
