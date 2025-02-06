@@ -57,16 +57,53 @@ SCRIPT
     sh $tmp_dir/build_openssl.sh > $tmp_dir/build_openssl.log
 }
 
+compile_openssl3() {
+    tar zxf ${base_dir}/openssl-3.0.11.tar.gz -C ${tmp_dir}
+    echo "Compiling openssl3..."
+    cat > $tmp_dir/build_openssl3.sh <<SCRIPT
+cd ${tmp_dir}/openssl-3.0.11
+./config --prefix=${output_dir}/openssl --openssldir=${output_dir}/openssl
+make
+make install
+SCRIPT
+    sh $tmp_dir/build_openssl3.sh > $tmp_dir/build_openssl3.log
+}
+
+
+compile_libssh2() {
+   tar zxf ${base_dir}/libssh2-1.11.1.tar.gz -C ${tmp_dir}
+   echo "Compiling libssh2..."
+   cat > $tmp_dir/build_libssh2.sh <<SCRIPT
+cd ${tmp_dir}/libssh2-1.11.1
+./configure --prefix=${output_dir} --with-crypto=openssl --with-libssl-prefix=${output_dir}/openssl
+make
+make install
+SCRIPT
+    sh $tmp_dir/build_libssh2.sh > $tmp_dir/build_libssh2.log
+}
+
 compile_zlib() {
     tar zxf ${base_dir}/zlib-1.2.11.tar.gz -C ${tmp_dir}
     echo "Compiling zlib..."
     cat > $tmp_dir/build_zlib.sh <<SCRIPT
 cd ${tmp_dir}/zlib-1.2.11
-./configure --prefix=${output_dir} --64
+./configure --prefix=${output_dir}/zlib-1.2.11
 make
 make install
 SCRIPT
     sh $tmp_dir/build_zlib.sh > $tmp_dir/build_zlib.log
+}
+
+compile_libzip() {
+    tar zxf ${base_dir}/libzip-1.2.0.tar.gz -C ${tmp_dir}
+    echo "Compiling libzip..."
+    cat > $tmp_dir/build_libzip.sh <<SCRIPT
+cd ${tmp_dir}/libzip-1.2.0
+./configure --prefix=${output_dir}/libzip --exec-prefix=${output_dir}/libzip --with-zlib=${output_dir}/zlib-1.2.11
+make
+make install
+SCRIPT
+    sh $tmp_dir/build_libzip.sh > $tmp_dir/build_libzip.log
 }
 
 compile_curl() {
@@ -74,8 +111,10 @@ compile_curl() {
     echo "Compiling curl..."
     cat > $tmp_dir/build_curl.sh <<SCRIPT
 cd ${tmp_dir}/curl-7.61.0
-./configure --prefix=${output_dir} --without-libssh2 \\
---with-ssl=${output_dir} --with-zlib=${output_dir}
+./configure --prefix=${output_dir}/curl  \\
+--with-libssh2 --with-libssh2=${output_dir} \\
+--with-ssl=${output_dir}/openssl  \\
+--with-zlib=${output_dir}/zlib-1.2.11
 make
 make install
 SCRIPT
@@ -112,11 +151,19 @@ compile_libjpg(){
      echo "Compiling libjpg..."
 }
 
+cp -frp /usr/lib64/libldap* /usr/lib/
+cp -frp /usr/lib64/libidn* /usr/lib/
+
 #compile_iconv
 ##compile_freetype
 #compile_freetype_2
-compile_openssl
+#compile_openssl
+compile_openssl3
+mkdir -p ${output_dir}/openssl/lib/
+cp -frp ${output_dir}/openssl/lib64/* ${output_dir}/openssl/lib/
+compile_libssh2
 compile_zlib
+compile_libzip
 compile_curl
 compile_libxml2
 #compile_libpng

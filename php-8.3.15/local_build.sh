@@ -15,7 +15,7 @@ rm -rf $output_dir
 mkdir $output_dir
 
 for ver in ${versions[*]}; do
-	#sh $third_dir/build-third.sh
+	sh $third_dir/build-third.sh
 	cd $base_dir
 	rm -rf $tmp_dir
     	mkdir $tmp_dir
