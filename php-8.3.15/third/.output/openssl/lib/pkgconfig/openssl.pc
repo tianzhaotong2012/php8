@@ -1,0 +1,9 @@
+prefix=/home/work/php8-master/php-8.3.15/third/.output/openssl
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 3.0.11
+Requires: libssl libcrypto

@@ -1,0 +1,14 @@
+prefix=/home/work/php8-master/php-8.3.15/third/.output/libzip
+exec_prefix=/home/work/php8-master/php-8.3.15/third/.output/libzip
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+libincludedir=${exec_prefix}/lib/libzip/include
+
+zipcmp=/home/work/php8-master/php-8.3.15/third/.output/libzip/bin/zipcmp
+
+Name: libzip
+Description: library for handling zip archives
+Version: 1.2.0
+Libs:  -L${libdir} -lzip -lz 
+Cflags: -I${includedir} -I${libincludedir}
+

@@ -154,6 +154,7 @@ compile_libjpg(){
 
 cp -frp /usr/lib64/libldap* /usr/lib/
 cp -frp /usr/lib64/libidn* /usr/lib/
+cp -frp /usr/lib64/libcidn* /usr/lib/
 
 #compile_iconv
 ##compile_freetype
