@@ -111,7 +111,8 @@ compile_curl() {
     echo "Compiling curl..."
     cat > $tmp_dir/build_curl.sh <<SCRIPT
 cd ${tmp_dir}/curl-7.61.0
-./configure --prefix=${output_dir}/curl  \\
+./configure --prefix=${output_dir}/curl \\
+--enable-ipv6  \\
 --with-libssh2 --with-libssh2=${output_dir} \\
 --with-ssl=${output_dir}/openssl  \\
 --with-zlib=${output_dir}/zlib-1.2.11
@@ -156,7 +157,7 @@ cp -frp /usr/lib64/libidn* /usr/lib/
 
 #compile_iconv
 ##compile_freetype
-#compile_freetype_2
+compile_freetype_2
 #compile_openssl
 compile_openssl3
 mkdir -p ${output_dir}/openssl/lib/
@@ -166,7 +167,7 @@ compile_zlib
 compile_libzip
 compile_curl
 compile_libxml2
-#compile_libpng
-#compile_libjpg
+compile_libpng
+compile_libjpg
 
 ##tar zxf ${base_dir}/libxml2-2.6.30.tar.gz -C $output_dir

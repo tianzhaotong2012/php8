@@ -42,13 +42,13 @@ echo "Compiling PHP $php_ver ..."
         --with-config-file-scan-dir="${install_dir}/php/etc/ext" \
 	--with-openssl="${src_dir}/third/openssl" \
 	--with-curl \
-	--with-gd \
+	--enable-gd \
 	--enable-mysqlnd \
 	--with-mysqli \
 	--with-pdo-mysql \
 	--without-sqlite3 \
 	--without-pdo-sqlite \
-	--with-webp \
+	--with-png \
 	--with-jpeg \
 	--disable-mbregex \
 	--enable-opcache \
@@ -64,6 +64,7 @@ echo "Compiling PHP $php_ver ..."
 	--with-zip \
 	--with-zlib \
 	--with-libxml \
+	--with-freetype-dir=/usr \
 	--with-pear="${install_dir}/php"
  
     ##make -j $compile_cores 

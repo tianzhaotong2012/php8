@@ -1,0 +1,949 @@
+compiling freetype_2-3-0-100
+Compiling openssl3...
+Cannot find "WWW::Curl::Easy" in podpath: cannot find suitable replacement path, cannot resolve link
+Cannot find "WWW::Curl::Easy" in podpath: cannot find suitable replacement path, cannot resolve link
+Compiling libssh2...
+Compiling zlib...
+Compiling libzip...
+Compiling curl...
+configure: WARNING: Can not compare OpenSSL headers and library versions.
+md5.c:494:5: 警告：不建议使用‘MD5_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:49)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (HMAC_hinit_func) MD5_Init,           /* Hash initialization function. */
+     ^
+md5.c:495:5: 警告：不建议使用‘MD5_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (HMAC_hupdate_func) MD5_Update,       /* Hash update function. */
+     ^
+md5.c:496:5: 警告：不建议使用‘MD5_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (HMAC_hfinal_func) MD5_Final,         /* Hash computation end function. */
+     ^
+md5.c:505:5: 警告：不建议使用‘MD5_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:49)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (Curl_MD5_init_func) MD5_Init,      /* Digest initialization function */
+     ^
+md5.c:506:5: 警告：不建议使用‘MD5_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (Curl_MD5_update_func) MD5_Update,  /* Digest update function */
+     ^
+md5.c:507:5: 警告：不建议使用‘MD5_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (Curl_MD5_final_func) MD5_Final,    /* Digest computation end function */
+     ^
+md5.c: 在函数‘Curl_md5it’中:
+md5.c:520:3: 警告：不建议使用‘MD5_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:49)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   MD5_Init(&ctx);
+   ^
+md5.c:521:3: 警告：不建议使用‘MD5_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   MD5_Update(&ctx, input, curlx_uztoui(strlen((char *)input)));
+   ^
+md5.c:522:3: 警告：不建议使用‘MD5_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   MD5_Final(outbuffer, &ctx);
+   ^
+curl_ntlm_core.c: 在函数‘setup_des_key’中:
+curl_ntlm_core.c:175:3: 警告：不建议使用‘DES_set_odd_parity’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:176)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_set_odd_parity(&key);
+   ^
+curl_ntlm_core.c:178:3: 警告：不建议使用‘DES_set_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:186)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_set_key(&key, ks);
+   ^
+curl_ntlm_core.c: 在函数‘Curl_ntlm_core_lm_resp’中:
+curl_ntlm_core.c:415:3: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) results,
+   ^
+curl_ntlm_core.c:419:3: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) (results + 8),
+   ^
+curl_ntlm_core.c:423:3: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) (results + 16),
+   ^
+curl_ntlm_core.c: 在函数‘Curl_ntlm_core_mk_lm_hash’中:
+curl_ntlm_core.c:490:5: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     DES_ecb_encrypt((DES_cblock *)magic, (DES_cblock *)lmbuffer,
+     ^
+curl_ntlm_core.c:494:5: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     DES_ecb_encrypt((DES_cblock *)magic, (DES_cblock *)(lmbuffer + 8),
+     ^
+curl_ntlm_core.c: 在函数‘Curl_ntlm_core_mk_nt_hash’中:
+curl_ntlm_core.c:579:5: 警告：不建议使用‘MD4_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md4.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     MD4_Init(&MD4pw);
+     ^
+curl_ntlm_core.c:580:5: 警告：不建议使用‘MD4_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md4.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     MD4_Update(&MD4pw, pw, 2 * len);
+     ^
+curl_ntlm_core.c:581:5: 警告：不建议使用‘MD4_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md4.h:52)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     MD4_Final(ntbuffer, &MD4pw);
+     ^
+sha256.c: 在函数‘Curl_sha256it’中:
+sha256.c:265:3: 警告：不建议使用‘SHA256_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/sha.h:73)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   SHA256_Init(&ctx);
+   ^
+sha256.c:266:3: 警告：不建议使用‘SHA256_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/sha.h:74)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   SHA256_Update(&ctx, input, curlx_uztoui(strlen((char *)input)));
+   ^
+sha256.c:267:3: 警告：不建议使用‘SHA256_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/sha.h:76)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   SHA256_Final(outbuffer, &ctx);
+   ^
+vtls/openssl.c: 在函数‘cert_stuff’中:
+vtls/openssl.c:636:11: 警告：不建议使用‘ENGINE_ctrl’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:429)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           if(!ENGINE_ctrl(data->state.engine, ENGINE_CTRL_GET_CMD_FROM_NAME,
+           ^
+vtls/openssl.c:643:11: 警告：不建议使用‘ENGINE_ctrl_cmd’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:450)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           if(!ENGINE_ctrl_cmd(data->state.engine, cmd_name,
+           ^
+vtls/openssl.c:815:13: 警告：不建议使用‘ENGINE_load_private_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:638)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+             ENGINE_load_private_key(data->state.engine, key_file,
+             ^
+vtls/openssl.c:879:9: 警告：不建议使用‘EVP_PKEY_get1_RSA’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1348)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         RSA *rsa = EVP_PKEY_get1_RSA(priv_key);
+         ^
+vtls/openssl.c:880:9: 警告：不建议使用‘RSA_flags’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/rsa.h:296)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         if(RSA_flags(rsa) & RSA_METHOD_FLAG_NO_CHECK)
+         ^
+vtls/openssl.c:882:9: 警告：不建议使用‘RSA_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/rsa.h:293)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         RSA_free(rsa); /* Decrement reference count */
+         ^
+vtls/openssl.c: 在函数‘Curl_ossl_set_engine’中:
+vtls/openssl.c:1109:3: 警告：不建议使用‘ENGINE_by_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:336)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   e = ENGINE_by_id(engine);
+   ^
+vtls/openssl.c:1125:5: 警告：不建议使用‘ENGINE_finish’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:628)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_finish(data->state.engine);
+     ^
+vtls/openssl.c:1126:5: 警告：不建议使用‘ENGINE_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:493)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_free(data->state.engine);
+     ^
+vtls/openssl.c:1129:3: 警告：不建议使用‘ENGINE_init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:620)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   if(!ENGINE_init(e)) {
+   ^
+vtls/openssl.c:1132:5: 警告：不建议使用‘ENGINE_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:493)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_free(e);
+     ^
+vtls/openssl.c: 在函数‘Curl_ossl_set_engine_default’中:
+vtls/openssl.c:1152:5: 警告：不建议使用‘ENGINE_set_default’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:708)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     if(ENGINE_set_default(data->state.engine, ENGINE_METHOD_ALL) > 0) {
+     ^
+vtls/openssl.c:1154:13: 警告：不建议使用‘ENGINE_get_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:552)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+             ENGINE_get_id(data->state.engine));
+             ^
+vtls/openssl.c:1158:13: 警告：不建议使用‘ENGINE_get_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:552)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+             ENGINE_get_id(data->state.engine));
+             ^
+vtls/openssl.c: 在函数‘Curl_ossl_engines_list’中:
+vtls/openssl.c:1177:3: 警告：不建议使用‘ENGINE_get_first’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:318)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   for(e = ENGINE_get_first(); e; e = ENGINE_get_next(e)) {
+   ^
+vtls/openssl.c:1177:3: 警告：不建议使用‘ENGINE_get_next’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:323)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+vtls/openssl.c:1178:5: 警告：不建议使用‘ENGINE_get_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:552)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     beg = curl_slist_append(list, ENGINE_get_id(e));
+     ^
+vtls/openssl.c: 在函数‘Curl_ossl_close_all’中:
+vtls/openssl.c:1331:5: 警告：不建议使用‘ENGINE_finish’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:628)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_finish(data->state.engine);
+     ^
+vtls/openssl.c:1332:5: 警告：不建议使用‘ENGINE_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:493)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_free(data->state.engine);
+     ^
+vtls/openssl.c: 在函数‘ossl_connect_step1’中:
+vtls/openssl.c:2435:5: 警告：不建议使用‘SSL_CTX_set_srp_username’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/ssl.h:1887)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     if(!SSL_CTX_set_srp_username(BACKEND->ctx, ssl_username)) {
+     ^
+vtls/openssl.c:2439:5: 警告：不建议使用‘SSL_CTX_set_srp_password’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/ssl.h:1888)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     if(!SSL_CTX_set_srp_password(BACKEND->ctx, SSL_SET_OPTION(password))) {
+     ^
+vtls/openssl.c: 在函数‘get_cert_chain’中:
+vtls/openssl.c:2965:9: 警告：不建议使用‘EVP_PKEY_get0_RSA’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1346)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         rsa = EVP_PKEY_get0_RSA(pubkey);
+         ^
+vtls/openssl.c:2965:13: 警告：assignment discards ‘const’ qualifier from pointer target type [默认启用]
+         rsa = EVP_PKEY_get0_RSA(pubkey);
+             ^
+vtls/openssl.c:2975:11: 警告：不建议使用‘RSA_get0_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/rsa.h:217)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           RSA_get0_key(rsa, &n, &e, NULL);
+           ^
+vtls/openssl.c:2995:9: 警告：不建议使用‘EVP_PKEY_get0_DSA’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1355)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         dsa = EVP_PKEY_get0_DSA(pubkey);
+         ^
+vtls/openssl.c:2995:13: 警告：assignment discards ‘const’ qualifier from pointer target type [默认启用]
+         dsa = EVP_PKEY_get0_DSA(pubkey);
+             ^
+vtls/openssl.c:3006:11: 警告：不建议使用‘DSA_get0_pqg’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dsa.h:201)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DSA_get0_pqg(dsa, &p, &q, &g);
+           ^
+vtls/openssl.c:3007:11: 警告：不建议使用‘DSA_get0_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dsa.h:204)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DSA_get0_key(dsa, &pub_key, NULL);
+           ^
+vtls/openssl.c:3027:9: 警告：不建议使用‘EVP_PKEY_get0_DH’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1363)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         dh = EVP_PKEY_get0_DH(pubkey);
+         ^
+vtls/openssl.c:3027:12: 警告：assignment discards ‘const’ qualifier from pointer target type [默认启用]
+         dh = EVP_PKEY_get0_DH(pubkey);
+            ^
+vtls/openssl.c:3037:11: 警告：不建议使用‘DH_get0_pqg’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dh.h:257)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DH_get0_pqg(dh, &p, &q, &g);
+           ^
+vtls/openssl.c:3038:11: 警告：不建议使用‘DH_get0_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dh.h:260)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DH_get0_key(dh, &pub_key, NULL);
+           ^
+/usr/bin/ld: warning: libssl.so.10, needed by //usr/lib64/libldap-2.4.so.2, may conflict with libssl.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by //usr/lib64/libldap-2.4.so.2, may conflict with libcrypto.so.3
+Compiling libxml2...
+xpath.c: 在函数‘xmlXPathCastNumberToString__internal_alias’中:
+xpath.c:3234:7: 警告：数组下标大于数组边界 [-Warray-bounds]
+   work[buffersize - 1] = 0;
+       ^
+libtool: warning: relinking 'libxml2mod.la'
+Compiling libpng...
++ cd /home/work/php8-master/php-8.3.15/third/.output/lib
++ for ext in a dll.a so so.16.35 la sl dylib
++ rm -f libpng.a
++ test -f libpng16.a
++ ln -s libpng16.a libpng.a
++ for ext in a dll.a so so.16.35 la sl dylib
++ rm -f libpng.dll.a
++ test -f libpng16.dll.a
++ for ext in a dll.a so so.16.35 la sl dylib
++ rm -f libpng.so
++ test -f libpng16.so
++ for ext in a dll.a so so.16.35 la sl dylib
++ rm -f libpng.so.16.35
++ test -f libpng16.so.16.35
++ for ext in a dll.a so so.16.35 la sl dylib
++ rm -f libpng.la
++ test -f libpng16.la
++ ln -s libpng16.la libpng.la
++ for ext in a dll.a so so.16.35 la sl dylib
++ rm -f libpng.sl
++ test -f libpng16.sl
++ for ext in a dll.a so so.16.35 la sl dylib
++ rm -f libpng.dylib
++ test -f libpng16.dylib
++ cd /home/work/php8-master/php-8.3.15/third/.output/bin
++ rm -f libpng-config
++ ln -s libpng16-config libpng-config
++ cd /home/work/php8-master/php-8.3.15/third/.output/include
++ for f in pnglibconf.h png.h pngconf.h
++ rm -f pnglibconf.h
++ ln -s libpng16/pnglibconf.h pnglibconf.h
++ for f in pnglibconf.h png.h pngconf.h
++ rm -f png.h
++ ln -s libpng16/png.h png.h
++ for f in pnglibconf.h png.h pngconf.h
++ rm -f pngconf.h
++ ln -s libpng16/pngconf.h pngconf.h
++ cd /home/work/php8-master/php-8.3.15/third/.output/lib/pkgconfig
++ rm -f libpng.pc
++ ln -s libpng16.pc libpng.pc
+Compiling libjpg...
+Compiling PHP 8.3.15 ...
+configure: WARNING: unrecognized options: --with-png, --with-freetype-dir
+configure: WARNING: The --with-pear option is deprecated
+configure: WARNING: unrecognized options: --with-png, --with-freetype-dir
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/php_dom.c: 在函数‘php_dom_get_content_into_zval’中:
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/php_dom.c:1792:2: 警告：passing argument 1 of ‘xmlNodeGetContent’ discards ‘const’ qualifier from pointer target type [默认启用]
+  char *str = (char *) xmlNodeGetContent(nodep);
+  ^
+In file included from /usr/include/libxml2/libxml/parser.h:16:0,
+                 from /home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/php_dom.h:29,
+                 from /home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/php_dom.c:26:
+/usr/include/libxml2/libxml/tree.h:1069:3: 附注：需要类型‘xmlNodePtr’，但实参的类型为‘const struct xmlNode *’
+   xmlNodeGetContent (xmlNodePtr cur);
+   ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/node.c: 在函数‘php_dom_node_is_content_equal’中:
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/node.c:1538:2: 警告：passing argument 1 of ‘xmlNodeGetContent’ discards ‘const’ qualifier from pointer target type [默认启用]
+  xmlChar *this_content = xmlNodeGetContent(this);
+  ^
+In file included from /usr/include/libxml2/libxml/parser.h:16:0,
+                 from /home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/php_dom.h:29,
+                 from /home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/node.c:24:
+/usr/include/libxml2/libxml/tree.h:1069:3: 附注：需要类型‘xmlNodePtr’，但实参的类型为‘const struct xmlNode *’
+   xmlNodeGetContent (xmlNodePtr cur);
+   ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/node.c:1539:2: 警告：passing argument 1 of ‘xmlNodeGetContent’ discards ‘const’ qualifier from pointer target type [默认启用]
+  xmlChar *other_content = xmlNodeGetContent(other);
+  ^
+In file included from /usr/include/libxml2/libxml/parser.h:16:0,
+                 from /home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/php_dom.h:29,
+                 from /home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/dom/node.c:24:
+/usr/include/libxml2/libxml/tree.h:1069:3: 附注：需要类型‘xmlNodePtr’，但实参的类型为‘const struct xmlNode *’
+   xmlNodeGetContent (xmlNodePtr cur);
+   ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c: 在函数‘zif_dns_check_record’中:
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c:367:2: 警告：初始值设定周围缺少花括号 [-Wmissing-braces]
+  querybuf answer = {0};
+  ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c:367:2: 警告：(在‘answer.qb1’的初始化附近) [-Wmissing-braces]
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c: 在函数‘zif_dns_get_record’中:
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c:822:2: 警告：初始值设定周围缺少花括号 [-Wmissing-braces]
+  querybuf answer = {0};
+  ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c:822:2: 警告：(在‘answer.qb1’的初始化附近) [-Wmissing-braces]
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c: 在函数‘zif_dns_get_mx’中:
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c:1052:2: 警告：初始值设定周围缺少花括号 [-Wmissing-braces]
+  querybuf answer = {0};
+  ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/dns.c:1052:2: 警告：(在‘answer.qb1’的初始化附近) [-Wmissing-braces]
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/filestat.c: 在函数‘php_stat’中:
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/filestat.c:733:2: 警告：初始值设定周围缺少花括号 [-Wmissing-braces]
+  php_stream_statbuf ssb = {0};
+  ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/ext/standard/filestat.c:733:2: 警告：(在‘ssb.sb’的初始化附近) [-Wmissing-braces]
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/main/network.c: 在函数‘php_network_connect_socket_to_host’中:
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/main/network.c:900:4: 警告：初始值设定周围缺少花括号 [-Wmissing-braces]
+    } local_address = {0};
+    ^
+/home/work/php8-master/php-8.3.15/.tmp/build/php-8.3.15/main/network.c:900:4: 警告：(在‘local_address.common’的初始化附近) [-Wmissing-braces]
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libssl.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libssl.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+/usr/bin/ld: warning: libcrypto.so.10, needed by /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/libldap.so, may conflict with libcrypto.so.3
+PEAR package PHP_Archive not installed: generated phar will require PHP's phar extension be enabled.
+config-set succeeded
+package.xml
+imagick-3.7.0/examples/polygon.php
+imagick-3.7.0/examples/captcha.php
+imagick-3.7.0/examples/thumbnail.php
+imagick-3.7.0/examples/watermark.php
+imagick-3.7.0/tests/001_imagick_readimage.phpt
+imagick-3.7.0/tests/002_thumbnail.phpt
+imagick-3.7.0/tests/003_cast_color_opacity.phpt
+imagick-3.7.0/tests/004_clone.phpt
+imagick-3.7.0/tests/005_bestfit.phpt
+imagick-3.7.0/tests/006_cropthumbnail.phpt
+imagick-3.7.0/tests/007_thumbnail_fill.phpt
+imagick-3.7.0/tests/008_newpseudoimage.phpt
+imagick-3.7.0/tests/009_properties.phpt
+imagick-3.7.0/tests/010_importimagepixels.phpt
+imagick-3.7.0/tests/011_polygon.phpt
+imagick-3.7.0/tests/012-clone-separation.phpt
+imagick-3.7.0/tests/013-read-filehandle.phpt
+imagick-3.7.0/tests/014-setresourcelimit.phpt
+imagick-3.7.0/tests/015-imagickdrawsetresolution.phpt
+imagick-3.7.0/tests/016-static-methods.phpt
+imagick-3.7.0/tests/017-clear-destroy.phpt
+imagick-3.7.0/tests/018-clone-length.phpt
+imagick-3.7.0/tests/019-readimages.phpt
+imagick-3.7.0/tests/020-pixeliterator.phpt
+imagick-3.7.0/tests/021-countable.phpt
+imagick-3.7.0/tests/022-writeimagefileformat.phpt
+imagick-3.7.0/tests/024-ispixelsimilar.phpt
+imagick-3.7.0/tests/025-function-image.phpt
+imagick-3.7.0/tests/025-get-color.phpt
+imagick-3.7.0/tests/026_phpinfo.phpt
+imagick-3.7.0/tests/027_Imagick_adaptiveResizeImage_basic.phpt
+imagick-3.7.0/tests/028_Imagick_adaptiveSharpenImage_basic.phpt
+imagick-3.7.0/tests/029_Imagick_adaptiveBlurImage_basic.phpt
+imagick-3.7.0/tests/030_Imagick_adaptiveThresholdImage_basic.phpt
+imagick-3.7.0/tests/031_Imagick_affineTransformImage_basic.phpt
+imagick-3.7.0/tests/032_Imagick_addNoiseImage_basic.phpt
+imagick-3.7.0/tests/033_Imagick_autoLevelImage_basic.phpt
+imagick-3.7.0/tests/034_Imagick_annotateImage_basic.phpt
+imagick-3.7.0/tests/035_Imagick_blackThresholdImage_basic.phpt
+imagick-3.7.0/tests/036_Imagick_blueShiftImage_basic.phpt
+imagick-3.7.0/tests/037_Imagick_blurImage_basic.phpt
+imagick-3.7.0/tests/038_Imagick_brightnessContrastImage_basic.phpt
+imagick-3.7.0/tests/039_Imagick_borderImage_basic.phpt
+imagick-3.7.0/tests/039_Imagick_borderImage_im7.phpt
+imagick-3.7.0/tests/040_Imagick_charcoalImage_basic.phpt
+imagick-3.7.0/tests/041_Imagick_chopImage_basic.phpt
+imagick-3.7.0/tests/042_Imagick_clutImage_basic.phpt
+imagick-3.7.0/tests/043_Imagick_colorizeImage_basic.phpt
+imagick-3.7.0/tests/044_Imagick_colorMatrixImage_basic.phpt
+imagick-3.7.0/tests/045_Imagick_compositeImage_basic.phpt
+imagick-3.7.0/tests/046_Imagick_contrastImage_basic.phpt
+imagick-3.7.0/tests/047_Imagick_convolveImage_6.phpt
+imagick-3.7.0/tests/047_Imagick_convolveImage_7.phpt
+imagick-3.7.0/tests/048_Imagick_cropImage_basic.phpt
+imagick-3.7.0/tests/049_Imagick_deskewImage_basic.phpt
+imagick-3.7.0/tests/050_Imagick_distortImage_Affine.phpt
+imagick-3.7.0/tests/051_Imagick_distortImage_Projection.phpt
+imagick-3.7.0/tests/052_Imagick_distortImage_Arc.phpt
+imagick-3.7.0/tests/053_Imagick_distortImage_RotatedArc.phpt
+imagick-3.7.0/tests/054_Imagick_distortImage_Bilinear.phpt
+imagick-3.7.0/tests/055_Imagick_distortImage_ScaleRotateTransform.phpt
+imagick-3.7.0/tests/056_Imagick_distortImage_Perspective.phpt
+imagick-3.7.0/tests/057_Imagick_distortImage_PerspectiveProjection.phpt
+imagick-3.7.0/tests/058_Imagick_distortImage_Polynomial.phpt
+imagick-3.7.0/tests/059_Imagick_distortImage_Polar.phpt
+imagick-3.7.0/tests/060_Imagick_distortImage_Polar.phpt
+imagick-3.7.0/tests/061_Imagick_distortImage_Barrel.phpt
+imagick-3.7.0/tests/062_Imagick_distortImage_BarrelInverse.phpt
+imagick-3.7.0/tests/063_Imagick_distortImage_Shepards.phpt
+imagick-3.7.0/tests/065_Imagick_despeckleImage_basic.phpt
+imagick-3.7.0/tests/066_Imagick_embossImage_basic.phpt
+imagick-3.7.0/tests/067_Imagick_edgeImage_basic.phpt
+imagick-3.7.0/tests/068_Imagick_enhanceImage_basic.phpt
+imagick-3.7.0/tests/069_Imagick_equalizeImage_case1.phpt
+imagick-3.7.0/tests/070_Imagick_equalizeImage_case2.phpt
+imagick-3.7.0/tests/071_Imagick_flipImage_basic.phpt
+imagick-3.7.0/tests/072_Imagick_evaluateImage_basic.phpt
+imagick-3.7.0/tests/073_Imagick_forwardFourierTransformImage_basic.phpt
+imagick-3.7.0/tests/074_Imagick_flopImage_basic.phpt
+imagick-3.7.0/tests/075_Imagick_floodFillPaintImage_basic.phpt
+imagick-3.7.0/tests/076_Imagick_fxImage_basic.phpt
+imagick-3.7.0/tests/077_Imagick_frameImage_basic.phpt
+imagick-3.7.0/tests/077_Imagick_frameImage_im7.phpt
+imagick-3.7.0/tests/078_Imagick_gammaImage_basic.phpt
+imagick-3.7.0/tests/079_Imagick_getImageGeometry_basic.phpt
+imagick-3.7.0/tests/080_Imagick_gaussianBlurImage_basic.phpt
+imagick-3.7.0/tests/081_Imagick_getImageHistogram_basic.phpt
+imagick-3.7.0/tests/083_Imagick_getPixelIterator_basic.phpt
+imagick-3.7.0/tests/084_Imagick_getPixelRegionIterator_basic.phpt
+imagick-3.7.0/tests/085_Imagick_haldClutImage_basic.phpt
+imagick-3.7.0/tests/086_Imagick_forwardFourierTransformImage_basic.phpt
+imagick-3.7.0/tests/087_Imagick_levelImage_basic.phpt
+imagick-3.7.0/tests/088_Imagick_implodeImage_basic.phpt
+imagick-3.7.0/tests/088_Imagick_implodeImageWithMethod_basic.phpt
+imagick-3.7.0/tests/089_Imagick_medianFilterImage_basic.phpt
+imagick-3.7.0/tests/090_Imagick_magnifyImage_basic.phpt
+imagick-3.7.0/tests/091_Imagick_linearStretchImage_basic.phpt
+imagick-3.7.0/tests/092_Imagick_mergeImageLayers_basic.phpt
+imagick-3.7.0/tests/093_Imagick_modulateImage_basic.phpt
+imagick-3.7.0/tests/094_Imagick_motionBlurImage_basic.phpt
+imagick-3.7.0/tests/095_Imagick_normalizeImage_basic.phpt
+imagick-3.7.0/tests/096_Imagick_negateImage_basic.phpt
+imagick-3.7.0/tests/097_Imagick_newPseudoImage_basic.phpt
+imagick-3.7.0/tests/098_Imagick_orderedPosterizeImage_basic.phpt
+imagick-3.7.0/tests/099_Imagick_oilPaintImage_basic.phpt
+imagick-3.7.0/tests/099_Imagick_oilPaintImage_sigma.phpt
+imagick-3.7.0/tests/100_Imagick_posterizeImage_basic.phpt
+imagick-3.7.0/tests/101_Imagick_quantizeImage_basic.phpt
+imagick-3.7.0/tests/102_Imagick_radialBlurImage_basic.phpt
+imagick-3.7.0/tests/103_Imagick_readImageBlob_basic.phpt
+imagick-3.7.0/tests/104_Imagick_randomThresholdImage_basic.phpt
+imagick-3.7.0/tests/105_Imagick_raiseImage_basic.phpt
+imagick-3.7.0/tests/106_Imagick_reduceNoiseImage_basic.phpt
+imagick-3.7.0/tests/107_Imagick_recolorImage_basic.phpt
+imagick-3.7.0/tests/108_Imagick_resampleImage_basic.phpt
+imagick-3.7.0/tests/109_Imagick_rollImage_basic.phpt
+imagick-3.7.0/tests/110_Imagick_resizeImage_basic.phpt
+imagick-3.7.0/tests/111_Imagick_rotateImage_basic.phpt
+imagick-3.7.0/tests/112_Imagick_roundCorners_basic.phpt
+imagick-3.7.0/tests/113_Imagick_rotationalBlurImage_basic.phpt
+imagick-3.7.0/tests/114_Imagick_scaleImage_basic.phpt
+imagick-3.7.0/tests/115_Imagick_selectiveBlurImage_basic.phpt
+imagick-3.7.0/tests/116_Imagick_separateImageChannel_basic.phpt
+imagick-3.7.0/tests/117_Imagick_segmentImage_basic.phpt
+imagick-3.7.0/tests/118_Imagick_setImageArtifact_basic.phpt
+imagick-3.7.0/tests/119_Imagick_sepiaToneImage_basic.phpt
+imagick-3.7.0/tests/120_Imagick_setCompressionQuality_basic.phpt
+imagick-3.7.0/tests/121_Imagick_setImageBias_basic.phpt
+imagick-3.7.0/tests/122_Imagick_setImageCompressionQuality_basic.phpt
+imagick-3.7.0/tests/123_Imagick_setImageClipMask_basic.phpt
+imagick-3.7.0/tests/125_Imagick_setImageOrientation_basic.phpt
+imagick-3.7.0/tests/126_Imagick_getImageChannelStats_basic.phpt
+imagick-3.7.0/tests/127_Imagick_progressMonitor_basic.phpt
+imagick-3.7.0/tests/130_Imagick_setOption_case1.phpt
+imagick-3.7.0/tests/131_Imagick_setOption_case2.phpt
+imagick-3.7.0/tests/132_Imagick_setOption_case3.phpt
+imagick-3.7.0/tests/133_Imagick_setSamplingFactors_basic.phpt
+imagick-3.7.0/tests/134_Imagick_shadowImage_basic.phpt
+imagick-3.7.0/tests/135_Imagick_sharpenImage_basic.phpt
+imagick-3.7.0/tests/136_Imagick_shadeImage_basic.phpt
+imagick-3.7.0/tests/137_Imagick_shearImage_basic.phpt
+imagick-3.7.0/tests/138_Imagick_shaveImage_basic.phpt
+imagick-3.7.0/tests/139_Imagick_sigmoidalContrastImage_basic.phpt
+imagick-3.7.0/tests/141_Imagick_sketchImage_basic.phpt
+imagick-3.7.0/tests/142_Imagick_solarizeImage_basic.phpt
+imagick-3.7.0/tests/143_Imagick_spreadImage_basic.phpt
+imagick-3.7.0/tests/143_Imagick_spreadImageWithMethod_basic.phpt
+imagick-3.7.0/tests/144_Imagick_spliceImage_basic.phpt
+imagick-3.7.0/tests/145_imagickkernel_coverage.phpt
+imagick-3.7.0/tests/149_Imagick_sparseColorImage.phpt
+imagick-3.7.0/tests/150_Imagick_setregistry.phpt
+imagick-3.7.0/tests/151_Imagick_subImageMatch_basic.phpt
+imagick-3.7.0/tests/152_Imagick_swirlImage_basic.phpt
+imagick-3.7.0/tests/152_Imagick_swirlImageWithMethod_basic.phpt
+imagick-3.7.0/tests/153_Imagick_statisticImage_basic.phpt
+imagick-3.7.0/tests/154_Imagick_textureImage_basic.phpt
+imagick-3.7.0/tests/155_Imagick_thresholdImage_basic.phpt
+imagick-3.7.0/tests/156_Imagick_tintImage_basic.phpt
+imagick-3.7.0/tests/157_Imagick_thumbnailImage_basic.phpt
+imagick-3.7.0/tests/158_Imagick_transposeImage_basic.phpt
+imagick-3.7.0/tests/159_Imagick_transformImage_basic.phpt
+imagick-3.7.0/tests/160_Imagick_transparentPaintImage_basic.phpt
+imagick-3.7.0/tests/161_Imagick_transformImageColorspace_basic.phpt
+imagick-3.7.0/tests/162_Imagick_transverseImage_basic.phpt
+imagick-3.7.0/tests/163_Imagick_uniqueImageColors_basic.phpt
+imagick-3.7.0/tests/164_Imagick_trimImage_basic.phpt
+imagick-3.7.0/tests/165_Imagick_unsharpMaskImage_basic.phpt
+imagick-3.7.0/tests/166_Imagick_waveImage_basic.phpt
+imagick-3.7.0/tests/166_Imagick_waveImageWithMethod_basic.phpt
+imagick-3.7.0/tests/167_Imagick_vignetteImage_basic.phpt
+imagick-3.7.0/tests/168_Imagick_whiteThresholdImage_basic.phpt
+imagick-3.7.0/tests/169_ImagickPixel_construct_basic.phpt
+imagick-3.7.0/tests/170_ImagickPixel_setColor_basic.phpt
+imagick-3.7.0/tests/171_ImagickPixel_setColorValue_basic.phpt
+imagick-3.7.0/tests/172_ImagickPixel_setColorValueQuantum_basic.phpt
+imagick-3.7.0/tests/173_ImagickDraw_bezier_basic.phpt
+imagick-3.7.0/tests/174_ImagickDraw_affine_basic.phpt
+imagick-3.7.0/tests/175_ImagickDraw_arc_basic.phpt
+imagick-3.7.0/tests/176_ImagickDraw_ellipse_basic.phpt
+imagick-3.7.0/tests/177_ImagickDraw_composite_basic.phpt
+imagick-3.7.0/tests/178_ImagickDraw_circle_basic.phpt
+imagick-3.7.0/tests/179_ImagickDraw_line_basic.phpt
+imagick-3.7.0/tests/180_ImagickDraw_matte_basic.phpt
+imagick-3.7.0/tests/181_ImagickDraw_pathStart_basic.phpt
+imagick-3.7.0/tests/182_ImagickDraw_pathCurveToQuadraticBezierAbsolute_basic.phpt
+imagick-3.7.0/tests/183_ImagickDraw_pathCurveToQuadraticBezierAbsolute_basic.phpt
+imagick-3.7.0/tests/184_ImagickDraw_polyline_basic.phpt
+imagick-3.7.0/tests/185_ImagickDraw_point_basic.phpt
+imagick-3.7.0/tests/186_ImagickDraw_polygon_basic.phpt
+imagick-3.7.0/tests/187_ImagickDraw_push_basic.phpt
+imagick-3.7.0/tests/188_ImagickDraw_pushPattern_basic.phpt
+imagick-3.7.0/tests/189_ImagickDraw_setClipPath_basic.phpt
+imagick-3.7.0/tests/190_ImagickDraw_popDefs_basic.phpt
+imagick-3.7.0/tests/191_ImagickDraw_push_basic.phpt
+imagick-3.7.0/tests/192_ImagickDraw_setClipPath_basic.phpt
+imagick-3.7.0/tests/193_ImagickDraw_pushPattern_basic.phpt
+imagick-3.7.0/tests/194_ImagickDraw_rectangle_basic.phpt
+imagick-3.7.0/tests/195_ImagickDraw_rotate_basic.phpt
+imagick-3.7.0/tests/196_ImagickDraw_scale_basic.phpt
+imagick-3.7.0/tests/197_ImagickDraw_roundRectangle_basic.phpt
+imagick-3.7.0/tests/198_ImagickDraw_setClipPath_basic.phpt
+imagick-3.7.0/tests/199_ImagickDraw_setClipRule_basic.phpt
+imagick-3.7.0/tests/200_ImagickDraw_setClipUnits_basic.phpt
+imagick-3.7.0/tests/201_ImagickDraw_setFillAlpha_basic.phpt
+imagick-3.7.0/tests/202_ImagickDraw_setFillColor_basic.phpt
+imagick-3.7.0/tests/203_ImagickDraw_setFillRule_basic.phpt
+imagick-3.7.0/tests/204_ImagickDraw_setFillOpacity_basic.phpt
+imagick-3.7.0/tests/206_ImagickDraw_setFontSize_basic.phpt
+imagick-3.7.0/tests/207_ImagickDraw_setFontFamily_basic.phpt
+imagick-3.7.0/tests/208_ImagickDraw_setFontStretch_basic.phpt
+imagick-3.7.0/tests/209_ImagickDraw_setFontWeight_basic.phpt
+imagick-3.7.0/tests/210_ImagickDraw_setFontStyle_basic.phpt
+imagick-3.7.0/tests/211_ImagickDraw_setStrokeAntialias_basic.phpt
+imagick-3.7.0/tests/212_ImagickDraw_setGravity_basic.phpt
+imagick-3.7.0/tests/213_ImagickDraw_setStrokeAlpha_basic.phpt
+imagick-3.7.0/tests/214_ImagickDraw_setStrokeDashOffset_basic.phpt
+imagick-3.7.0/tests/215_ImagickDraw_setStrokeColor_basic.phpt
+imagick-3.7.0/tests/216_ImagickDraw_setStrokeDashArray_basic.phpt
+imagick-3.7.0/tests/217_ImagickDraw_setStrokeMiterLimit_basic.phpt
+imagick-3.7.0/tests/218_ImagickDraw_setStrokeLineCap_basic.phpt
+imagick-3.7.0/tests/219_ImagickDraw_setStrokeLineJoin_basic.phpt
+imagick-3.7.0/tests/220_ImagickDraw_setStrokeOpacity_basic.phpt
+imagick-3.7.0/tests/221_ImagickDraw_setStrokeWidth_basic.phpt
+imagick-3.7.0/tests/222_ImagickDraw_setTextAlignment_basic.phpt
+imagick-3.7.0/tests/223_ImagickDraw_setTextAntialias_basic.phpt
+imagick-3.7.0/tests/224_ImagickDraw_setTextUnderColor_basic.phpt
+imagick-3.7.0/tests/225_ImagickDraw_setTextDecoration_basic.phpt
+imagick-3.7.0/tests/226_ImagickDraw_setViewBox_basic.phpt
+imagick-3.7.0/tests/227_ImagickDraw_skewY_basic.phpt
+imagick-3.7.0/tests/228_ImagickDraw_skewX_basic.phpt
+imagick-3.7.0/tests/229_Tutorial_fxAnalyzeImage_case1.phpt
+imagick-3.7.0/tests/234_Tutorial_edgeExtend_basic.phpt
+imagick-3.7.0/tests/235_ImagickDraw_translate_basic.phpt
+imagick-3.7.0/tests/236_Imagick_identify_basic.phpt
+imagick-3.7.0/tests/237_Tutorial_deconstructGif_basic.phpt
+imagick-3.7.0/tests/239_Tutorial_gradientReflection_basic.phpt
+imagick-3.7.0/tests/240_Tutorial_imagickCompositeGen_basic.phpt
+imagick-3.7.0/tests/241_Tutorial_psychedelicFont_basic.phpt
+imagick-3.7.0/tests/242_Tutorial_levelizeImage_basic.phpt
+imagick-3.7.0/tests/243_Tutorial_svgExample_basic.phpt
+imagick-3.7.0/tests/244_Tutorial_psychedelicFontGif_basic.phpt
+imagick-3.7.0/tests/245_Tutorial_screenEmbed_basic.phpt
+imagick-3.7.0/tests/246_antialias_image.phpt
+imagick-3.7.0/tests/247_ImagickPixelIterator_construct_basic.phpt
+imagick-3.7.0/tests/248_ImagickPixelIterator_clear_basic.phpt
+imagick-3.7.0/tests/249_ImagickPixelIterator_getNextIteratorRow_basic.phpt
+imagick-3.7.0/tests/250_ImagickPixelIterator_resetIterator_basic.phpt
+imagick-3.7.0/tests/251_ImagickPixelIterator_setIteratorRow_basic.phpt
+imagick-3.7.0/tests/252_ImagickPixelIterator_construct_basic.phpt
+imagick-3.7.0/tests/064_cropThumbNailImage.phpt
+imagick-3.7.0/tests/253_getHdri.phpt
+imagick-3.7.0/tests/254_getConfigureOptions.phpt
+imagick-3.7.0/tests/255_getFeatures.phpt
+imagick-3.7.0/tests/256_Imagick_exportImagePixels_basic.phpt
+imagick-3.7.0/tests/257_Imagick_setImageChannelMask_basic.phpt
+imagick-3.7.0/tests/258_Imagick_evaluateImages_basic.phpt
+imagick-3.7.0/tests/259_Imagick_colorPoints_basic.phpt
+imagick-3.7.0/tests/260_localContrastImage.phpt
+imagick-3.7.0/tests/261_compositeImageGravity.phpt
+imagick-3.7.0/tests/262_autoOrient.phpt
+imagick-3.7.0/tests/263_autoGammaImage.phpt
+imagick-3.7.0/tests/264_ImagickDraw_getTextDirection_basic.phpt
+imagick-3.7.0/tests/265_ImagickDraw_getOpacity_basic.phpt
+imagick-3.7.0/tests/266_ImagickDraw_getFontResolution_basic.phpt
+imagick-3.7.0/tests/267_ImagickDraw_getBorderColor_basic.phpt
+imagick-3.7.0/tests/268_ImagickDraw_getDensity_basic.phpt
+imagick-3.7.0/tests/269_ImagickPixel_setColorFromPixel_basic.phpt
+imagick-3.7.0/tests/270_imagick_restoreErrorHandler.phpt
+imagick-3.7.0/tests/271_imagick_constants.phpt
+imagick-3.7.0/tests/272_imagick_identifyimagetype.phpt
+imagick-3.7.0/tests/273_imagick_falsyimage.phpt
+imagick-3.7.0/tests/274_imagick_setImageAlpha.phpt
+imagick-3.7.0/tests/275_ImagickPixel_unitializedObjects.phpt
+imagick-3.7.0/tests/276_Imagick_artifacts.phpt
+imagick-3.7.0/tests/277_Imagick_colorDecisionListImage.phpt
+imagick-3.7.0/tests/278_Imagick_optimaze_gif.phpt
+imagick-3.7.0/tests/279_ImagickDraw_setTextInterlineSpacing.phpt
+imagick-3.7.0/tests/280_imagickkernel_exception_invalid_origin.phpt
+imagick-3.7.0/tests/281_imagick_houghLineImage_basic.phpt
+imagick-3.7.0/tests/281_ini_settings_default.phpt
+imagick-3.7.0/tests/282_ini_settings_set_falsy_string.phpt
+imagick-3.7.0/tests/283_ini_settings_set_falsy_zero.phpt
+imagick-3.7.0/tests/284_ini_settings_set_truthy_number.phpt
+imagick-3.7.0/tests/285_ini_settings_set_truthy_string.phpt
+imagick-3.7.0/tests/286_Imagick_setMask_basic.phpt
+imagick-3.7.0/tests/287_Imagick_GetImageChannelRange_basic.phpt
+imagick-3.7.0/tests/288_imagick_prevent_zero_size_images.phpt
+imagick-3.7.0/tests/289_Imagick_setImageMask_basic.phpt
+imagick-3.7.0/tests/290_imagick_profileimage.phpt
+imagick-3.7.0/tests/291_reflection.phpt
+imagick-3.7.0/tests/292_index_iterator.phpt
+imagick-3.7.0/tests/294_Imagick_cannyEdgeImage.phpt
+imagick-3.7.0/tests/295_Imagick_setSeed.phpt
+imagick-3.7.0/tests/296_Imagick_waveletDenoiseImage.phpt
+imagick-3.7.0/tests/297_Imagick_meanShiftImage.phpt
+imagick-3.7.0/tests/298_Imagick_kmeansImage.phpt
+imagick-3.7.0/tests/299_Imagick_rangeThresholdImage.phpt
+imagick-3.7.0/tests/300_Imagick_autoThresholdImage.phpt
+imagick-3.7.0/tests/301_Imagick_bilateralBlurImage.phpt
+imagick-3.7.0/tests/302_Imagick_claheImage.phpt
+imagick-3.7.0/tests/303_Imagick_averageImages.phpt
+imagick-3.7.0/tests/304_Imagick_is_imagemagick_borked.phpt
+imagick-3.7.0/tests/305_Imagick_complexImages.phpt
+imagick-3.7.0/tests/306_Imagick_interpolativeResizeImage.phpt
+imagick-3.7.0/tests/307_Imagick_levelImageColors.phpt
+imagick-3.7.0/tests/308_Imagick_levelizeImage.phpt
+imagick-3.7.0/tests/309_Imagick_orderedDitherImage.phpt
+imagick-3.7.0/tests/310_Imagick_whiteBalanceImage.phpt
+imagick-3.7.0/tests/311_Imagick_channelFxImage.phpt
+imagick-3.7.0/tests/312_Imagick_colorThresholdImage.phpt
+imagick-3.7.0/tests/314_Imagick_getBackgroundColor.phpt
+imagick-3.7.0/tests/315_Imagick_getImageArtifacts.phpt
+imagick-3.7.0/tests/316_Imagick_getImageKurtosis.phpt
+imagick-3.7.0/tests/317_Imagick_getImageMean.phpt
+imagick-3.7.0/tests/318_Imagick_getImageRange.phpt
+imagick-3.7.0/tests/319_Imagick_getInterpolateMethod.phpt
+imagick-3.7.0/tests/320_Imagick_getOptions.phpt
+imagick-3.7.0/tests/321_Imagick_getOrientation.phpt
+imagick-3.7.0/tests/322_Imagick_getResolution.phpt
+imagick-3.7.0/tests/323_Imagick_getType.phpt
+imagick-3.7.0/tests/324_Imagick_polynomialImage.phpt
+imagick-3.7.0/tests/325_Imagick_setDepth.phpt
+imagick-3.7.0/tests/326_Imagick_setExtract.phpt
+imagick-3.7.0/tests/327_Imagick_polaroidImage_basic.phpt
+imagick-3.7.0/tests/328_Imagick_polaroidImageWithTextAndMethod_basic.phpt
+imagick-3.7.0/tests/bug20636.phpt
+imagick-3.7.0/tests/bug21229.phpt
+imagick-3.7.0/tests/bug59378.phpt
+imagick-3.7.0/tests/bug59378_windows.phpt
+imagick-3.7.0/tests/bug64015.phpt
+imagick-3.7.0/tests/bug_66098.phpt
+imagick-3.7.0/tests/bug_71742.phpt
+imagick-3.7.0/tests/bug_72226.phpt
+imagick-3.7.0/tests/bug_73840.phpt
+imagick-3.7.0/tests/bug81235.phpt
+imagick-3.7.0/tests/functions.inc
+imagick-3.7.0/tests/github_174.phpt
+imagick-3.7.0/tests/houghline_input_image.png
+imagick-3.7.0/tests/Biter_500.jpg
+imagick-3.7.0/tests/php.gif
+imagick-3.7.0/tests/skipif.inc
+imagick-3.7.0/tests/skipprobefourier.inc
+imagick-3.7.0/tests/anonymous_pro_minus.ttf
+imagick-3.7.0/tests/OFL.txt
+imagick-3.7.0/util/Float32Info.php
+imagick-3.7.0/util/FloatInfo.php
+imagick-3.7.0/util/functions.php
+imagick-3.7.0/util/fixup_arginfo.php
+imagick-3.7.0/config.m4
+imagick-3.7.0/imagemagick.m4
+imagick-3.7.0/config.w32
+imagick-3.7.0/CREDITS
+imagick-3.7.0/imagick.c
+imagick-3.7.0/imagick_class.c
+imagick-3.7.0/imagickdraw_class.c
+imagick-3.7.0/imagickpixel_class.c
+imagick-3.7.0/imagickpixeliterator_class.c
+imagick-3.7.0/imagickkernel_class.c
+imagick-3.7.0/imagick_helpers.c
+imagick-3.7.0/imagick_file.c
+imagick-3.7.0/php_imagick.h
+imagick-3.7.0/php_imagemagick_version_defs.h
+imagick-3.7.0/php_imagick_defs.h
+imagick-3.7.0/php_imagick_helpers.h
+imagick-3.7.0/php_imagick_macros.h
+imagick-3.7.0/php_imagick_shared.h
+imagick-3.7.0/php_imagick_file.h
+imagick-3.7.0/shim_im6_to_im7.c
+imagick-3.7.0/shim_im6_to_im7.h
+imagick-3.7.0/shim_php7_to_php8.h
+imagick-3.7.0/ImagickPixel_arginfo.h
+imagick-3.7.0/Imagick_arginfo.h
+imagick-3.7.0/ImagickDraw_arginfo.h
+imagick-3.7.0/ImagickKernel_arginfo.h
+imagick-3.7.0/ImagickPixelIterator_arginfo.h
+imagick-3.7.0/ImagickPixel.stub.php
+imagick-3.7.0/Imagick.stub.php
+imagick-3.7.0/ImagickDraw.stub.php
+imagick-3.7.0/ImagickKernel.stub.php
+imagick-3.7.0/ImagickPixelIterator.stub.php
+imagick-3.7.0/php_imagemagick_version_defs.h
+imagick-3.7.0/regen_arginfo.sh
+imagick-3.7.0/ChangeLog
+imagick-3.7.0/LICENSE
+Configuring for:
+PHP Api Version:         20230831
+Zend Module Api No:      20230831
+Zend Extension Api No:   420230831
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/gcc accepts -g... yes
+checking for /usr/bin/gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... /usr/bin/gcc -E
+checking for icc... no
+checking for suncc... no
+checking for system library directory... lib
+checking if compiler supports -Wl,-rpath,... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for PHP prefix... /home/work/php8-master/php-8.3.15/.tmp/install/php
+checking for PHP includes... -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib
+checking for PHP extension directory... /home/work/php8-master/php-8.3.15/.tmp/install/php/ext
+checking for PHP installed headers prefix... /home/work/php8-master/php-8.3.15/.tmp/install/php/include/php
+checking if debug is enabled... no
+checking if zts is enabled... no
+checking for gawk... gawk
+checking whether to enable the imagick extension... yes, shared
+checking for pkg-config... /usr/bin/pkg-config
+checking ImageMagick MagickWand API configuration program... checking Testing /usr/local/bin/MagickWand-config... Doesn't exist
+checking Testing /usr/bin/MagickWand-config... It exists
+found in /usr/bin/MagickWand-config
+checking if ImageMagick version is at least 6.2.4... found version 6.9.10 Q16 
+checking for MagickWand.h or magick-wand.h header... user location /usr/include/ImageMagick-6/wand/MagickWand.h
+checking PHP version is at least 5.3.2... yes. found 8.3.15
+libs
+-lMagickWand-6.Q16 -lMagickCore-6.Q16
+
+
+checking for MagickGetVersion... yes
+checking omp_pause_resource_all usability... no
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for ld used by /usr/bin/gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for /usr/bin/ld option to reload object files... -r
+checking for BSD-compatible nm... /usr/bin/nm -B
+checking whether ln -s works... yes
+checking how to recognize dependent libraries... pass_all
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking the maximum length of command line arguments... 1572864
+checking command to parse /usr/bin/nm -B output from /usr/bin/gcc object... ok
+checking for objdir... .libs
+checking for ar... ar
+checking for ranlib... ranlib
+checking for strip... strip
+checking if /usr/bin/gcc supports -fno-rtti -fno-exceptions... no
+checking for /usr/bin/gcc option to produce PIC... -fPIC
+checking if /usr/bin/gcc PIC flag -fPIC works... yes
+checking if /usr/bin/gcc static flag -static works... no
+checking if /usr/bin/gcc supports -c -o file.o... yes
+checking whether the /usr/bin/gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... no
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+
+creating libtool
+appending configuration tag "CXX" to libtool
+checking whether the /usr/bin/gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking for /usr/bin/gcc option to produce PIC... 
+checking if /usr/bin/gcc static flag  works... yes
+checking if /usr/bin/gcc supports -c -o file.o... yes
+checking whether the /usr/bin/gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+(cached) (cached) checking how to hardcode library paths into programs... unsupported
+configure: patching config.h.in
+configure: creating ./config.status
+config.status: creating config.h
+find . -name \*.gcno -o -name \*.gcda | xargs rm -f
+find . -name \*.lo -o -name \*.o -o -name \*.dep | xargs rm -f
+find . -name \*.la -o -name \*.a | xargs rm -f
+find . -name \*.so | xargs rm -f
+find . -name .libs -a -type d|xargs rm -rf
+rm -f libphp.la      modules/* libs/*
+rm -f ext/opcache/jit/zend_jit_x86.c
+rm -f ext/opcache/jit/zend_jit_arm64.c
+rm -f ext/opcache/minilua
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_file.c -o imagick_file.lo  -MMD -MF imagick_file.dep -MT imagick_file.lo
+mkdir .libs
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_file.c -MMD -MF imagick_file.dep -MT imagick_file.lo  -fPIC -DPIC -o .libs/imagick_file.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c -o imagick_class.lo  -MMD -MF imagick_class.dep -MT imagick_class.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c -MMD -MF imagick_class.dep -MT imagick_class.lo  -fPIC -DPIC -o .libs/imagick_class.o
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_getImageMatte’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:300:2: 警告：不建议使用‘MagickGetImageMatte’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:85) [-Wdeprecated-declarations]
+  matte = MagickGetImageMatte(intern->magick_wand);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_paintFloodfillImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:1330:3: 警告：不建议使用‘MagickPaintFloodfillImage’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:102) [-Wdeprecated-declarations]
+   status = MagickPaintFloodfillImage(intern->magick_wand, channel, fill_wand, fuzz, NULL, x, y);
+   ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:1338:3: 警告：不建议使用‘MagickPaintFloodfillImage’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:102) [-Wdeprecated-declarations]
+   status = MagickPaintFloodfillImage(intern->magick_wand, channel, fill_wand, fuzz, border_wand, x, y);
+   ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_recolorImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:1820:2: 警告：不建议使用‘MagickRecolorImage’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:116) [-Wdeprecated-declarations]
+  status = MagickRecolorImage(intern->magick_wand, order, array);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_colorFloodfillImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:4510:2: 警告：不建议使用‘MagickColorFloodfillImage’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:78) [-Wdeprecated-declarations]
+  status = MagickColorFloodfillImage(intern->magick_wand, fill_wand, fuzz, border_wand, x, y);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_mapImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:4991:2: 警告：不建议使用‘MagickMapImage’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:89) [-Wdeprecated-declarations]
+  status = MagickMapImage(intern->magick_wand, intern_map->magick_wand, dither);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_matteFloodfillImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:5032:2: 警告：不建议使用‘MagickMatteFloodfillImage’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:91) [-Wdeprecated-declarations]
+  status = MagickMatteFloodfillImage(intern->magick_wand, alpha, fuzz, color_wand, x, y);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_medianFilterImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:5070:2: 警告：不建议使用‘MagickMedianFilterImage’(声明于 /usr/include/ImageMagick-6/wand/magick-image.h:229) [-Wdeprecated-declarations]
+  status = MagickMedianFilterImage(intern->magick_wand, radius);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_paintOpaqueImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:5152:2: 警告：不建议使用‘MagickPaintOpaqueImageChannel’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:107) [-Wdeprecated-declarations]
+  status = MagickPaintOpaqueImageChannel(intern->magick_wand, channel, target_wand, fill_wand, fuzz);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_paintTransparentImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:5235:2: 警告：不建议使用‘MagickPaintTransparentImage’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:110) [-Wdeprecated-declarations]
+  status = MagickPaintTransparentImage(intern->magick_wand, color_wand, alpha, fuzz);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_reduceNoiseImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:5399:2: 警告：不建议使用‘MagickReduceNoiseImage’(声明于 /usr/include/ImageMagick-6/wand/magick-image.h:276) [-Wdeprecated-declarations]
+  status = MagickReduceNoiseImage(intern->magick_wand, radius);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_getImageAttribute’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:6729:2: 警告：不建议使用‘MagickGetImageAttribute’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:62) [-Wdeprecated-declarations]
+  attribute = MagickGetImageAttribute(intern->magick_wand, key);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_getImageChannelExtrema’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:6946:2: 警告：不建议使用‘MagickGetImageChannelExtrema’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:81) [-Wdeprecated-declarations]
+  status = MagickGetImageChannelExtrema(intern->magick_wand, channel_type, &minima, &maxima);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_getImageExtrema’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:7285:2: 警告：不建议使用‘MagickGetImageExtrema’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:83) [-Wdeprecated-declarations]
+  status = MagickGetImageExtrema(intern->magick_wand, &min, &max);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_getImageIndex’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:8450:2: 警告：不建议使用‘MagickGetImageIndex’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:68) [-Wdeprecated-declarations]
+  status = MagickGetImageIndex(intern->magick_wand);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_getImageSize’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:8571:2: 警告：不建议使用‘MagickGetImageSize’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:147) [-Wdeprecated-declarations]
+  ZVAL_LONG(return_value, (long)MagickGetImageSize(intern->magick_wand));
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_setImageAttribute’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:9045:2: 警告：不建议使用‘MagickSetImageAttribute’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:118) [-Wdeprecated-declarations]
+  status = MagickSetImageAttribute(intern->magick_wand, key, attribute);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_flattenImages’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:9418:2: 警告：不建议使用‘MagickFlattenImages’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:139) [-Wdeprecated-declarations]
+  tmp_wand = MagickFlattenImages(intern->magick_wand);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_averageImages’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:10747:2: 警告：不建议使用‘MagickAverageImages’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:138) [-Wdeprecated-declarations]
+  tmp_wand = MagickAverageImages(intern->magick_wand);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_mosaicImages’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:11291:2: 警告：不建议使用‘MagickMosaicImages’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:142) [-Wdeprecated-declarations]
+  tmp_wand = MagickMosaicImages(intern->magick_wand);
+  ^
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c: 在函数‘zim_Imagick_radialBlurImage’中:
+/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_class.c:11421:2: 警告：不建议使用‘MagickRadialBlurImageChannel’(声明于 /usr/include/ImageMagick-6/wand/deprecate.h:114) [-Wdeprecated-declarations]
+  status = MagickRadialBlurImageChannel(intern->magick_wand, channel, angle);
+  ^
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickdraw_class.c -o imagickdraw_class.lo  -MMD -MF imagickdraw_class.dep -MT imagickdraw_class.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickdraw_class.c -MMD -MF imagickdraw_class.dep -MT imagickdraw_class.lo  -fPIC -DPIC -o .libs/imagickdraw_class.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickpixel_class.c -o imagickpixel_class.lo  -MMD -MF imagickpixel_class.dep -MT imagickpixel_class.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickpixel_class.c -MMD -MF imagickpixel_class.dep -MT imagickpixel_class.lo  -fPIC -DPIC -o .libs/imagickpixel_class.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickpixeliterator_class.c -o imagickpixeliterator_class.lo  -MMD -MF imagickpixeliterator_class.dep -MT imagickpixeliterator_class.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickpixeliterator_class.c -MMD -MF imagickpixeliterator_class.dep -MT imagickpixeliterator_class.lo  -fPIC -DPIC -o .libs/imagickpixeliterator_class.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_helpers.c -o imagick_helpers.lo  -MMD -MF imagick_helpers.dep -MT imagick_helpers.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick_helpers.c -MMD -MF imagick_helpers.dep -MT imagick_helpers.lo  -fPIC -DPIC -o .libs/imagick_helpers.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick.c -o imagick.lo  -MMD -MF imagick.dep -MT imagick.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagick.c -MMD -MF imagick.dep -MT imagick.lo  -fPIC -DPIC -o .libs/imagick.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickkernel_class.c -o imagickkernel_class.lo  -MMD -MF imagickkernel_class.dep -MT imagickkernel_class.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/imagickkernel_class.c -MMD -MF imagickkernel_class.dep -MT imagickkernel_class.lo  -fPIC -DPIC -o .libs/imagickkernel_class.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=compile /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE   -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6   -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/shim_im6_to_im7.c -o shim_im6_to_im7.lo  -MMD -MF shim_im6_to_im7.dep -MT shim_im6_to_im7.lo
+ /usr/bin/gcc -I. -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6 -DHAVE_CONFIG_H -g -O2 -fPIC -D_GNU_SOURCE -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/ImageMagick-6 -DZEND_COMPILE_DL_EXT=1 -c /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/shim_im6_to_im7.c -MMD -MF shim_im6_to_im7.dep -MT shim_im6_to_im7.lo  -fPIC -DPIC -o .libs/shim_im6_to_im7.o
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=link /usr/bin/gcc -shared -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/include -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/main -I/home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0 -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/main -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/TSRM -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/Zend -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext -I/home/work/php8-master/php-8.3.15/.tmp/install/php/include/php/ext/date/lib -I/usr/include/ImageMagick-6  -DHAVE_CONFIG_H  -g -O2 -fPIC -D_GNU_SOURCE    -o imagick.la -export-dynamic -avoid-version -prefer-pic -module -rpath /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/modules  imagick_file.lo imagick_class.lo imagickdraw_class.lo imagickpixel_class.lo imagickpixeliterator_class.lo imagick_helpers.lo imagick.lo imagickkernel_class.lo shim_im6_to_im7.lo -lMagickWand-6.Q16 -lMagickCore-6.Q16
+/usr/bin/gcc -shared  .libs/imagick_file.o .libs/imagick_class.o .libs/imagickdraw_class.o .libs/imagickpixel_class.o .libs/imagickpixeliterator_class.o .libs/imagick_helpers.o .libs/imagick.o .libs/imagickkernel_class.o .libs/shim_im6_to_im7.o  -lMagickWand-6.Q16 -lMagickCore-6.Q16  -Wl,-soname -Wl,imagick.so -o .libs/imagick.so
+creating imagick.la
+(cd .libs && rm -f imagick.la && ln -s ../imagick.la imagick.la)
+/bin/sh /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/libtool --tag=CC --mode=install cp ./imagick.la /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/modules
+cp ./.libs/imagick.so /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/modules/imagick.so
+cp ./.libs/imagick.lai /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/modules/imagick.la
+PATH="$PATH:/sbin" ldconfig -n /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/modules
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /home/work/php8-master/php-8.3.15/ext/.tmp/imagick-3.7.0/modules
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the `-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the `LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the `LD_RUN_PATH' environment variable
+     during linking
+   - use the `-Wl,--rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to `/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+
+Build complete.
+Don't forget to run 'make test'.
+
+Release php 8.3.15 binary success
