@@ -84,7 +84,7 @@ while test $# -gt 0; do
         ;;
 
     --feature|--features)
-        for feature in SSL UnixSockets libz AsynchDNS IDN PSL NTLM NTLM_WB TLS-SRP HTTPS-proxy ""; do
+        for feature in SSL IPv6 UnixSockets libz AsynchDNS IDN PSL NTLM NTLM_WB TLS-SRP HTTPS-proxy ""; do
             test -n "$feature" && echo "$feature"
         done
         ;;

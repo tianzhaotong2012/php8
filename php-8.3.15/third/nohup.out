@@ -1,0 +1,213 @@
+compiling freetype_2-3-0-100
+Compiling openssl3...
+Cannot find "WWW::Curl::Easy" in podpath: cannot find suitable replacement path, cannot resolve link
+Cannot find "WWW::Curl::Easy" in podpath: cannot find suitable replacement path, cannot resolve link
+Compiling libssh2...
+Compiling zlib...
+Compiling libzip...
+Compiling curl...
+configure: WARNING: Cannot find libraries for LDAP support: LDAP disabled
+configure: WARNING: Can not compare OpenSSL headers and library versions.
+configure: WARNING: Cannot find libraries for IDN support: IDN disabled
+md5.c:494:5: 警告：不建议使用‘MD5_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:49)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (HMAC_hinit_func) MD5_Init,           /* Hash initialization function. */
+     ^
+md5.c:495:5: 警告：不建议使用‘MD5_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (HMAC_hupdate_func) MD5_Update,       /* Hash update function. */
+     ^
+md5.c:496:5: 警告：不建议使用‘MD5_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (HMAC_hfinal_func) MD5_Final,         /* Hash computation end function. */
+     ^
+md5.c:505:5: 警告：不建议使用‘MD5_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:49)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (Curl_MD5_init_func) MD5_Init,      /* Digest initialization function */
+     ^
+md5.c:506:5: 警告：不建议使用‘MD5_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (Curl_MD5_update_func) MD5_Update,  /* Digest update function */
+     ^
+md5.c:507:5: 警告：不建议使用‘MD5_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     (Curl_MD5_final_func) MD5_Final,    /* Digest computation end function */
+     ^
+md5.c: 在函数‘Curl_md5it’中:
+md5.c:520:3: 警告：不建议使用‘MD5_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:49)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   MD5_Init(&ctx);
+   ^
+md5.c:521:3: 警告：不建议使用‘MD5_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   MD5_Update(&ctx, input, curlx_uztoui(strlen((char *)input)));
+   ^
+md5.c:522:3: 警告：不建议使用‘MD5_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md5.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   MD5_Final(outbuffer, &ctx);
+   ^
+curl_ntlm_core.c: 在函数‘setup_des_key’中:
+curl_ntlm_core.c:175:3: 警告：不建议使用‘DES_set_odd_parity’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:176)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_set_odd_parity(&key);
+   ^
+curl_ntlm_core.c:178:3: 警告：不建议使用‘DES_set_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:186)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_set_key(&key, ks);
+   ^
+curl_ntlm_core.c: 在函数‘Curl_ntlm_core_lm_resp’中:
+curl_ntlm_core.c:415:3: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) results,
+   ^
+curl_ntlm_core.c:419:3: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) (results + 8),
+   ^
+curl_ntlm_core.c:423:3: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   DES_ecb_encrypt((DES_cblock*) plaintext, (DES_cblock*) (results + 16),
+   ^
+curl_ntlm_core.c: 在函数‘Curl_ntlm_core_mk_lm_hash’中:
+curl_ntlm_core.c:490:5: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     DES_ecb_encrypt((DES_cblock *)magic, (DES_cblock *)lmbuffer,
+     ^
+curl_ntlm_core.c:494:5: 警告：不建议使用‘DES_ecb_encrypt’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/des.h:105)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     DES_ecb_encrypt((DES_cblock *)magic, (DES_cblock *)(lmbuffer + 8),
+     ^
+curl_ntlm_core.c: 在函数‘Curl_ntlm_core_mk_nt_hash’中:
+curl_ntlm_core.c:579:5: 警告：不建议使用‘MD4_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md4.h:50)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     MD4_Init(&MD4pw);
+     ^
+curl_ntlm_core.c:580:5: 警告：不建议使用‘MD4_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md4.h:51)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     MD4_Update(&MD4pw, pw, 2 * len);
+     ^
+curl_ntlm_core.c:581:5: 警告：不建议使用‘MD4_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/md4.h:52)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     MD4_Final(ntbuffer, &MD4pw);
+     ^
+sha256.c: 在函数‘Curl_sha256it’中:
+sha256.c:265:3: 警告：不建议使用‘SHA256_Init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/sha.h:73)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   SHA256_Init(&ctx);
+   ^
+sha256.c:266:3: 警告：不建议使用‘SHA256_Update’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/sha.h:74)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   SHA256_Update(&ctx, input, curlx_uztoui(strlen((char *)input)));
+   ^
+sha256.c:267:3: 警告：不建议使用‘SHA256_Final’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/sha.h:76)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   SHA256_Final(outbuffer, &ctx);
+   ^
+vtls/openssl.c: 在函数‘cert_stuff’中:
+vtls/openssl.c:636:11: 警告：不建议使用‘ENGINE_ctrl’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:429)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           if(!ENGINE_ctrl(data->state.engine, ENGINE_CTRL_GET_CMD_FROM_NAME,
+           ^
+vtls/openssl.c:643:11: 警告：不建议使用‘ENGINE_ctrl_cmd’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:450)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           if(!ENGINE_ctrl_cmd(data->state.engine, cmd_name,
+           ^
+vtls/openssl.c:815:13: 警告：不建议使用‘ENGINE_load_private_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:638)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+             ENGINE_load_private_key(data->state.engine, key_file,
+             ^
+vtls/openssl.c:879:9: 警告：不建议使用‘EVP_PKEY_get1_RSA’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1348)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         RSA *rsa = EVP_PKEY_get1_RSA(priv_key);
+         ^
+vtls/openssl.c:880:9: 警告：不建议使用‘RSA_flags’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/rsa.h:296)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         if(RSA_flags(rsa) & RSA_METHOD_FLAG_NO_CHECK)
+         ^
+vtls/openssl.c:882:9: 警告：不建议使用‘RSA_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/rsa.h:293)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         RSA_free(rsa); /* Decrement reference count */
+         ^
+vtls/openssl.c: 在函数‘Curl_ossl_set_engine’中:
+vtls/openssl.c:1109:3: 警告：不建议使用‘ENGINE_by_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:336)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   e = ENGINE_by_id(engine);
+   ^
+vtls/openssl.c:1125:5: 警告：不建议使用‘ENGINE_finish’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:628)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_finish(data->state.engine);
+     ^
+vtls/openssl.c:1126:5: 警告：不建议使用‘ENGINE_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:493)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_free(data->state.engine);
+     ^
+vtls/openssl.c:1129:3: 警告：不建议使用‘ENGINE_init’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:620)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   if(!ENGINE_init(e)) {
+   ^
+vtls/openssl.c:1132:5: 警告：不建议使用‘ENGINE_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:493)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_free(e);
+     ^
+vtls/openssl.c: 在函数‘Curl_ossl_set_engine_default’中:
+vtls/openssl.c:1152:5: 警告：不建议使用‘ENGINE_set_default’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:708)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     if(ENGINE_set_default(data->state.engine, ENGINE_METHOD_ALL) > 0) {
+     ^
+vtls/openssl.c:1154:13: 警告：不建议使用‘ENGINE_get_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:552)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+             ENGINE_get_id(data->state.engine));
+             ^
+vtls/openssl.c:1158:13: 警告：不建议使用‘ENGINE_get_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:552)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+             ENGINE_get_id(data->state.engine));
+             ^
+vtls/openssl.c: 在函数‘Curl_ossl_engines_list’中:
+vtls/openssl.c:1177:3: 警告：不建议使用‘ENGINE_get_first’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:318)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   for(e = ENGINE_get_first(); e; e = ENGINE_get_next(e)) {
+   ^
+vtls/openssl.c:1177:3: 警告：不建议使用‘ENGINE_get_next’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:323)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+vtls/openssl.c:1178:5: 警告：不建议使用‘ENGINE_get_id’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:552)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     beg = curl_slist_append(list, ENGINE_get_id(e));
+     ^
+vtls/openssl.c: 在函数‘Curl_ossl_close_all’中:
+vtls/openssl.c:1331:5: 警告：不建议使用‘ENGINE_finish’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:628)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_finish(data->state.engine);
+     ^
+vtls/openssl.c:1332:5: 警告：不建议使用‘ENGINE_free’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/engine.h:493)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     ENGINE_free(data->state.engine);
+     ^
+vtls/openssl.c: 在函数‘ossl_connect_step1’中:
+vtls/openssl.c:2435:5: 警告：不建议使用‘SSL_CTX_set_srp_username’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/ssl.h:1887)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     if(!SSL_CTX_set_srp_username(BACKEND->ctx, ssl_username)) {
+     ^
+vtls/openssl.c:2439:5: 警告：不建议使用‘SSL_CTX_set_srp_password’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/ssl.h:1888)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+     if(!SSL_CTX_set_srp_password(BACKEND->ctx, SSL_SET_OPTION(password))) {
+     ^
+vtls/openssl.c: 在函数‘get_cert_chain’中:
+vtls/openssl.c:2965:9: 警告：不建议使用‘EVP_PKEY_get0_RSA’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1346)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         rsa = EVP_PKEY_get0_RSA(pubkey);
+         ^
+vtls/openssl.c:2965:13: 警告：assignment discards ‘const’ qualifier from pointer target type [默认启用]
+         rsa = EVP_PKEY_get0_RSA(pubkey);
+             ^
+vtls/openssl.c:2975:11: 警告：不建议使用‘RSA_get0_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/rsa.h:217)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           RSA_get0_key(rsa, &n, &e, NULL);
+           ^
+vtls/openssl.c:2995:9: 警告：不建议使用‘EVP_PKEY_get0_DSA’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1355)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         dsa = EVP_PKEY_get0_DSA(pubkey);
+         ^
+vtls/openssl.c:2995:13: 警告：assignment discards ‘const’ qualifier from pointer target type [默认启用]
+         dsa = EVP_PKEY_get0_DSA(pubkey);
+             ^
+vtls/openssl.c:3006:11: 警告：不建议使用‘DSA_get0_pqg’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dsa.h:201)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DSA_get0_pqg(dsa, &p, &q, &g);
+           ^
+vtls/openssl.c:3007:11: 警告：不建议使用‘DSA_get0_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dsa.h:204)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DSA_get0_key(dsa, &pub_key, NULL);
+           ^
+vtls/openssl.c:3027:9: 警告：不建议使用‘EVP_PKEY_get0_DH’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/evp.h:1363)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+         dh = EVP_PKEY_get0_DH(pubkey);
+         ^
+vtls/openssl.c:3027:12: 警告：assignment discards ‘const’ qualifier from pointer target type [默认启用]
+         dh = EVP_PKEY_get0_DH(pubkey);
+            ^
+vtls/openssl.c:3037:11: 警告：不建议使用‘DH_get0_pqg’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dh.h:257)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DH_get0_pqg(dh, &p, &q, &g);
+           ^
+vtls/openssl.c:3038:11: 警告：不建议使用‘DH_get0_key’(声明于 /home/work/php8-master/php-8.3.15/third/.output/openssl/include/openssl/dh.h:260)：Since OpenSSL 3.0 [-Wdeprecated-declarations]
+           DH_get0_key(dh, &pub_key, NULL);
+           ^
+Compiling libxml2...
+./configure: line 15158: python3.6-config: command not found
+xpath.c: 在函数‘xmlXPathCastNumberToString__internal_alias’中:
+xpath.c:3234:7: 警告：数组下标大于数组边界 [-Warray-bounds]
+   work[buffersize - 1] = 0;
+       ^
+libxml.c:14:20: 致命错误：Python.h：没有那个文件或目录
+ #include <Python.h>
+                    ^
+编译中断。
+make[4]: *** [libxml.lo] 错误 1
+make[3]: *** [all-recursive] 错误 1
+make[2]: *** [all] 错误 2
+make[1]: *** [all-recursive] 错误 1
+make: *** [all] 错误 2
+libxml.c:14:20: 致命错误：Python.h：没有那个文件或目录
+ #include <Python.h>
+                    ^
+编译中断。
+make[4]: *** [libxml.lo] 错误 1
+make[3]: *** [install-recursive] 错误 1
+make[2]: *** [install] 错误 2
+make[1]: *** [install-recursive] 错误 1
+make: *** [install] 错误 2
+Compiling libpng...
+configure: error: zlib not installed
+make: *** 没有指明目标并且找不到 makefile。 停止。
+make: *** 没有规则可以创建目标“install”。 停止。
+Compiling libjpg...

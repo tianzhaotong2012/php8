@@ -1,4 +1,5 @@
-## Prepare ##
+
+re ##
 - yum install -y gcc gcc-c++
 - yum install -y autoconf
 - yum install -y freetype-devel
@@ -6,7 +7,6 @@
 - yum -y install libxml2 libxml2-devel
 - yum install perl-IPC-Cmd #openssl need
 - yum install openldap openldap-clients openldap-servers openldap-devel libpsl-devel -y #curl need
-- yum -y install libidn2 #php need
 - yum -y install python36-devel # not found python3.6-config
 - yum -y install libidn-devel libidn2-devel # Cannot find libraries for IDN support: IDN disabled
 - yum -y install libidn2 #error while loading shared libraries: libidn2.so.0
